@@ -1,0 +1,34 @@
+body {
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.4;
+}
+
+h2 {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #399bd1;
+}
+
+h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+img {
+  width: 100%;
+}
+.header {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover {
+  background-color: inherit;
+  color: #399bd1;
+}
+
+.jumbotron {
+  background-image: url("./resources/images/jumbotron-bike.jpg");
+}
