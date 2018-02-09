@@ -1,6 +1,6 @@
 body {
   font-size: 14px;
-  font-family: 'Open Sans', sans-serif;
+  --main-font-family: 'Open Sans', sans-serif;
 }
 
 h2 {
@@ -39,11 +39,56 @@ img {
   max-width: 51.3rem;
   color: white;
   padding: 11.85rem 0;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000;
 }
 
 .jumbotron-content h1 {
   font-family: "Monoton";
   text-transform: uppercase;
   font-size: 7.1rem;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000;
+}
+
+.btn-primary {
+  background-color: #399bd1;
+  box-shadow: 0 0 3px rgba(0,0,0, 0.5);
+}
+
+.btn-primary:hover {
+  box-shadow: 0 0 12px rgba(0,0,0, 0.9);
+}
+
+.btn-primary:active {
+  box-shadow: 0 0 3px rgba(0,0,0, 0.5);
+
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+.image-container img {
+  opacity: 0.7;
+}
+ul {
+  color: rgba(0, 0, 0, 0,7);
+}
+.projects {
+  padding-bottom: 5.85rem;
+}
+
+.having-trouble {
+  padding: 5.2rem 0;
+  background-color: #f3f3f3;
+  text-align: center;
+}
+
+strong {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.having-trouble p {
+  max-width: 42rem;
+  padding: 1.4rem 0;
+  margin: auto;
 }
