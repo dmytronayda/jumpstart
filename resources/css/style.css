@@ -35,6 +35,24 @@ img {
   background-image: url("./../images/jumbotron-bike.jpg");
 }
 
+.jumbotron-think {
+  display: flex;
+  justify-content: center;
+  background-image: url("./../images/jumbotron-beer.jpg");
+}
+
+.jumbotron-create {
+  display: flex;
+  justify-content: center;
+  background-image: url("./../images/jumbotron-flowers.jpg");
+}
+
+.jumbotron-start {
+  display: flex;
+  justify-content: center;
+  background-image: url("./../images/jumbotron-duffel.jpg");
+}
+
 .jumbotron-content {
   max-width: 51.3rem;
   color: white;
