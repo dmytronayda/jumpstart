@@ -10,3 +10,9 @@ $(document).ready(function(){
     pauseOnFocus: false
   });
 });
+
+var scroolValue = 0;
+
+$("navbar").scrool(function() {
+  var verticalValue = $(this).scrollTop(); 
+});
