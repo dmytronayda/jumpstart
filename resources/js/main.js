@@ -12,21 +12,21 @@ $(document).ready(function() {
 });
 
 
-  var prev = 0;
-
-  $(window).scroll(function(event) {
-    var scrollTop = $this.scrollTop();
-
-    if (scrollTop - prev > 50) {
-      var navBarHeight = $('.navbar').css('height');
-      $('.navbar').animate({top: '-' + navBarHeight}, 150);
-      prev = scrollTop;
-    }
-
-    else (prev - scrollTop > 50) {
-      $('.navbar').animate({top: '-' - navBarHeight}, 150);
-      prev = scrollTop;
-    }
-
-
-  });
+  // var prev = 0;
+  //
+  // $(window).scroll(function(event) {
+  //   var scrollTop = $this.scrollTop();
+  //
+  //   if (scrollTop - prev > 50) {
+  //     var navBarHeight = $('.navbar').css('height');
+  //     $('.navbar').animate({top: '-' + navBarHeight}, 150);
+  //     prev = scrollTop;
+  //   }
+  //
+  //   else (prev - scrollTop > 50) {
+  //     $('.navbar').animate({top: '-' - navBarHeight}, 150);
+  //     prev = scrollTop;
+  //   }
+  //
+  //
+  // });
