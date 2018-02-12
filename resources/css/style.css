@@ -136,3 +136,7 @@ strong {
   padding: 1.4rem 0;
   margin: auto;
 }
+
+.slick-initialized .slick-slide {
+  display: flex;
+}

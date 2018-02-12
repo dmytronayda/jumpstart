@@ -14,5 +14,5 @@ $(document).ready(function(){
 var scroolValue = 0;
 
 $("navbar").scrool(function() {
-  var verticalValue = $(this).scrollTop(); 
+  var verticalValue = $(this).scrollTop();
 });
