@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function() {
   $('.carousel').slick({
     slidesToScroll: 1,
     slidesToShow: 1,
@@ -10,43 +10,22 @@ $(document).ready(function(){
     pauseOnFocus: false
   });
 
+  var prev = 0;
 
-// Hide Header on scroll down
-var didScroll;
-var lastScrollTop = 0;
-var delta = 5;
-var navbarHeight = $('header').outerHeight();
+  $(window).scroll(function(event) {
+    var scrollTop = $this.scrollTop();
 
-$(window).scroll(function(event){
-    didScroll = true;
-});
-
-setInterval(function() {
-    if (didScroll) {
-        hasScrolled();
-        didScroll = false;
-    }
-}, 250);
-
-function hasScrolled() {
-    var st = $(this).scrollTop();
-
-    // Make sure they scroll more than delta
-    if(Math.abs(lastScrollTop - st) <= delta)
-        return;
-
-    // If they scrolled down and are past the navbar, add class .nav-up.
-    // This is necessary so you never see what is "behind" the navbar.
-    if (st > lastScrollTop && st > navbarHeight){
-        // Scroll Down
-        $('header').removeClass('nav-down').addClass('nav-up');
-    } else {
-        // Scroll Up
-        if(st + $(window).height() < $(document).height()) {
-            $('header').removeClass('nav-up').addClass('nav-down');
-        }
+    if (scrollTop - prev > 50) {
+      var navBarHeight = $('.navbar').css('height');
+      $('.navbar').animate({top: '-' + navBarHeight}, 150);
+      prev = scrollTop;
     }
 
-    lastScrollTop = st;
-}
+    else (prev - scrollTop > 50) {
+      $('.navbar').animate({top: '-' - navBarHeight}, 150);
+      prev = scrollTop;
+    }
+
+
+  });
 });
