@@ -9,6 +9,8 @@ $(document).ready(function() {
     pauseOnHover: false,
     pauseOnFocus: false
   });
+});
+
 
   var prev = 0;
 
@@ -28,4 +30,3 @@ $(document).ready(function() {
 
 
   });
-});
