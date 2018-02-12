@@ -28,6 +28,10 @@ img {
   color: #399bd1;
 }
 
+.nav-up {
+  top: -55px; 
+}
+
 
 .jumbotron-bike {
   display: flex;
